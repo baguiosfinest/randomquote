@@ -17,13 +17,37 @@
     <link href="css/starter-template.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body id="mainbody" class="">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=147359945366741";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
+    <div class="loader">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
+    </div>
+  </div><!--// end .loader -->
 
     <div class="container">
 
       <div id="quote-wrap">
-        <span class="btn-rand"><i class="fa fa-random" aria-hidden="true"></i></span>
+        <span class="btn-rand" data-toggle="tooltip" data-placement="top" title="Click button for random quote."><i class="fa fa-random" aria-hidden="true"></i></span>
         <div class="inner"></div><!--// end .inner -->
       </div><!--// end #quote-wrap -->
 
